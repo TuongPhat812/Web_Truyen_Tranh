@@ -1,0 +1,563 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    background: white;
+  }
+  
+  .header {
+  background-image: url("../img/bg_header_2017.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 3.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 2rem;
+}
+.logo {
+  width: 15rem;
+  height: 3.5rem;
+  overflow: hidden;
+}
+.logo img {
+  height: 100%;
+  object-fit: cover;
+}
+.header form {
+  position: relative;
+}
+.header form input {
+  font-size: 1rem;
+  padding: auto 0;
+  border-radius: 0.1rem;
+    
+  width: 35rem;
+    
+  border: none;
+}
+.header form .icon-search {
+  position: absolute;
+  right: 0.7rem;
+  top: 0.4rem;
+}
+.header .icon i {
+  color: #fff;
+  z-index: 1;
+  font-size: 1.5rem;
+}
+.header .login-center {
+  display: flex;
+  align-items: center;
+  width: 15rem;
+  justify-content: flex-end;
+  color: #fff;
+}
+.login-center button {
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+.login-center .login-btn {
+  margin-right: 0.5rem;
+}
+.login-center .logout-btn {
+  margin-left: 0.5rem;
+}
+
+.login-center button:hover {
+  border-bottom: 1px solid #fff;
+}
+
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #58257b;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  
+  .topnav a:hover {
+    background-color: #db7093;
+    color: white;
+  }
+  .leftcolumn1 { 
+    float: left;
+    width: 70%;
+    background-color: red;
+  }
+  .BXH a{
+    width: 33.3%;
+  }
+  .rightcolumn {
+    float: right;
+    width: 30%;
+    padding-left: 20px;
+  }
+  
+  .fakeimg {
+    background-color: #baa1cc;
+    width: 100%;
+  }
+  
+  .card {
+      background-color: white;
+      margin-top: 20px;
+      margin: 0px 20px;
+      overflow: hidden;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .footer {
+    padding: 10px;
+    text-align: center;
+    background: #222222;
+    margin-top: 10px;
+    float: left;
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .leftcolumn, .rightcolumn { 
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  @media screen and (max-width: 300px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+  
+  img.slider {
+      position: relative;
+      width: 190px;
+      height: 220px;
+      margin: 0 10px;
+      left: 0px;
+  }
+  
+  .slide {
+      width: 100%;
+      height: 320px;
+      margin: 0 auto;
+      border: 2px solid #ccc;
+      position: relative;
+      padding: 0px;
+      left: 0px;
+      overflow: hidden;
+      float: left;
+  }
+  
+  /* 2 nút next và lùi để chuyển slide */
+  .btn-change {
+      width: 55px;
+      height: 55px;
+      position: absolute;
+      top: 70%;
+      transform: translateY(-100%);
+  }
+  
+  #next {
+      right: 10px;
+  }
+  
+  #prev {
+      left: 10px;
+  }
+  
+  .imgslide{
+      padding: 0px 5px;
+      display: flex;
+      overflow-y: hidden;
+      overflow-x: scroll !important;
+  }
+  .imgslide::-webkit-scrollbar{
+      display: none;
+  }
+  .noidung1{
+    
+    height: 260px;
+    width: 220px;
+    float: left;
+    margin: 15px 5px 10px 20px;
+    padding: 0 0 0 0;
+  
+  }
+  .hinhanh{
+    height: 100%;
+    width: 100%;
+    border-color: rgb(255, 255, 255);
+    border-style: solid ;
+    border-width:2px;
+    background-color: #ffffff;
+    
+   
+  }
+  .button1{
+    float: left;
+   
+    width:  100%;
+    text-align: center;
+  
+  
+  }
+  
+  .button2:hover{
+    background-color: rgb(167, 184, 240);
+    width:  23.41px;
+    height:  22px;
+  }
+  .hinhanh:hover{
+    border-style: solid;
+    border-color: rgb(167, 184, 240);
+    border-width: 4px;
+  }
+  
+  .tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color:   rgb(167, 184, 240);
+    ;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: cyan;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: rgb(255, 255, 255);
+  }
+  .top{
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-width: 3px;
+    width: 100%;
+    height: 105px;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    border-bottom: inherit;
+  }
+  
+  .anhtop{
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    width: 84.375px;
+    height: 100px;
+    float: left;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+  }
+  .tentop{
+    float: left;
+    padding: 0 0 0 10px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    
+  }
+  .tentop:hover{
+    color: rgb(167, 184, 240);
+    font-style: italic;
+  }
+  .rank{
+    float: left;
+    font-size: 50px;
+    margin: 0 auto 0 auto;
+    padding: 20px 0 0 0;
+    text-align: center;
+  }
+  .anhtop:hover{
+    border-color: rgb(167, 184, 240);
+    
+  }
+  
+  .toolbar {
+    background-color: #58257b;
+    width: auto;
+      height: auto;
+  }
+  
+  .toolbar a {
+    float: left;
+    display: block;
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  
+  .toolbar a:hover {
+    background-color: #000;
+    color: white;
+
+  }
+  .dropbtn {
+    background-color: white;
+    color: black;
+    padding: 14px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    float: left;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 450px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    height: auto;
+    width: 150px;
+    float: left;
+  
+  }
+  
+  .dropdown-content a:hover {
+    
+    color: rgb(167, 184, 240);
+    font-style: italic;
+  
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #000;
+      color: white;
+  }
+  
+  .chitiet{
+    background-color: rgb(88, 172, 241);
+    height: 100%;
+    width: 100%;
+    float: left;
+  }
+  .noidungchitiet{
+    float: left;
+    background-color: honeydew;
+    height: auto;
+    width: 70%;
+  }
+  .tentruyen{
+    padding-left: 10px;
+    font-size: 30px;
+  }
+  a.linkTruyen{
+    text-decoration: none;
+    color: blue;
+  }
+  a.linkTruyen:hover{
+    text-decoration: underline;
+    color: #551A8B;
+  }
+  .anhtruyen{
+    border:solid;
+    border-color: red;
+    height: 260px;
+    width: 220px;
+    float: left;
+    margin: 0 0 0 20px;
+  } 
+  .gioithieu{
+    float: left;
+    border:solid;
+    border-color: red;
+    width: 600px;
+    height: 260px;
+    margin-left: 50px;
+  }
+  .gt{
+    float: left;
+    width: auto;
+    height: auto;
+    padding: 0 100px 0 0px;
+    margin: 0 0 0 0;
+  }
+  .theodoi{
+    float: left;
+    background-color: rgb(95, 150, 14);
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    padding: 15px 0 0 0 ;
+    margin: 0 20px 0 0;
+    text-align: center;
+    color:white;
+  }
+  .theodoi:hover{
+    font-style: italic;
+    background-color: rgb(128, 240, 174);
+  }
+
+  .quaylaitrangchu{
+      Display: inline-block;
+
+      
+      
+  }
+  .quaylailist{
+    
+    Display: inline-block;
+  }
+  .f5{
+    Display: inline-block;
+
+
+  }
+  .leftchap{
+    Display: inline-block;
+
+  }
+  .rightchap{
+    Display: inline;
+
+  }
+  .chonchapnhanh{
+      height: 200px;
+      Display: inline;
+      width: auto;
+  }
+  .thongtinbenle{
+      text-align: center;
+  }
+  .noidungtruyen{
+      
+      background-color: rgb(0, 0, 0);
+  }
+  .anhcuatruyen{
+      height: auto;
+      min-height: 35px;
+      width: auto;
+      max-width: 65%;
+      border: solid;
+      border: red;
+      background-color: white;
+      margin: 0 auto 0 auto;
+  }
+  .buttonchucnang{
+    width: auto;
+    height: auto;
+    text-align: center;
+  }
+  .chonchap{
+    cursor: pointer;
+    height: 32.2px;
+    width: 250px;
+    display: inline;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-size: 24px;
+  }
+  .move-top {
+    position: fixed;
+    background: transparent;
+    bottom: 2rem;
+    right: 2rem;
+    color: blue;
+    border: 3px solid blue;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.2rem 0.4rem;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
+  }
+  .move-top.show {
+    visibility: visible;
+    opacity: 1;
+  }
+@media screen and (max-width: 920px){
+    .header form input {
+  width: 30rem;
+    }}
+@media screen and (max-width: 850px){
+    
+    .header form input {
+  width: 25rem;
+}
+}
+@media screen and (max-width: 735px){
+    
+    .header form input {
+  width: 20rem;
+}
+}
+@media screen and (max-width: 640px){
+    
+    .header form input {
+  width: 15rem;
+}
+  }
+@media screen and (max-width: 535px){
+    
+    .header form input {
+  width: 15rem;
+}
+  }

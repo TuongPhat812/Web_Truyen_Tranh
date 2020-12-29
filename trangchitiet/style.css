@@ -1,0 +1,593 @@
+* {
+    box-sizing: border-box;
+  }
+  html {
+  scroll-behavior: smooth;
+}
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: white;
+  }
+  
+  .header {
+  background-image: url("../img/bg_header_2017.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 3.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 2rem;
+}
+.logo {
+  width: 15rem;
+  height: 3.5rem;
+  overflow: hidden;
+}
+.logo img {
+  height: 100%;
+  object-fit: cover;
+}
+.header form {
+  position: relative;
+}
+.header form input {
+  font-size: 1rem;
+  padding: 0.3rem 1rem;
+  border-radius: 0.1rem;
+  width: 35rem;
+  border: none;
+}
+.header form .icon-search {
+  position: absolute;
+  right: 0.7rem;
+  top: 0.4rem;
+}
+.header .icon i {
+  color: #fff;
+  z-index: 1;
+  font-size: 1.5rem;
+}
+.header .login-center {
+  display: flex;
+  align-items: center;
+  width: 15rem;
+  justify-content: flex-end;
+  color: #fff;
+}
+.login-center button {
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+.login-center .login-btn {
+  margin-right: 0.5rem;
+}
+.login-center .logout-btn {
+  margin-left: 0.5rem;
+}
+
+.login-center button:hover {
+  border-bottom: 1px solid #fff;
+}
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #58257b;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  
+  .topnav a:hover {
+    background-color: #db7093;
+    color: white;
+  }
+  .leftcolumn1 { 
+    float: left;
+    /* width: 70%; */
+    background-color: red;
+  }
+  .BXH a{
+    width: 33.3%;
+  }
+  .rightcolumn {
+    float: right;
+    /* width: 30%; */
+    padding-left: 20px;
+  }
+  
+  .fakeimg {
+    background-color: #baa1cc;
+    width: 100%;
+  }
+  
+  .card {
+      background-color: white;
+      margin-top: 20px;
+      margin: 0px 0px;
+      overflow: hidden;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .footer {
+    padding: 10px;
+    text-align: center;
+    background: #222222;
+    margin-top: 10px;
+    float: left;
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .leftcolumn, .rightcolumn { 
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  @media screen and (max-width: 300px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+  
+  img.slider {
+      position: relative;
+      width: 190px;
+      height: 220px;
+      margin: 0 10px;
+      left: 0px;
+  }
+  
+  .slide {
+      width: 100%;
+      height: 320px;
+      margin: 0 auto;
+      border: 2px solid #ccc;
+      position: relative;
+      padding: 0px;
+      left: 0px;
+      overflow: hidden;
+      float: left;
+  }
+  
+  /* 2 nút next và lùi để chuyển slide */
+  .btn-change {
+      width: 55px;
+      height: 55px;
+      position: absolute;
+      top: 70%;
+      transform: translateY(-100%);
+  }
+  
+  #next {
+      right: 10px;
+  }
+  
+  #prev {
+      left: 10px;
+  }
+  
+  .imgslide{
+      padding: 0px 5px;
+      display: flex;
+      overflow-y: hidden;
+      overflow-x: scroll !important;
+  }
+  .imgslide::-webkit-scrollbar{
+      display: none;
+  }
+  .noidung1{
+    
+    height: 260px;
+    width: 220px;
+    float: left;
+    margin: 15px 5px 10px 20px;
+    padding: 0 0 0 0;
+  
+  }
+  .hinhanh{
+    height: 100%;
+    width: 100%;
+    border-color: rgb(255, 255, 255);
+    border-style: solid ;
+    border-width:2px;
+    background-color: #ffffff;
+    
+   
+  }
+  .button1{
+    float: left;
+    width:  100%;
+    text-align: center;
+  }
+  
+  .button2:hover{
+    background-color: rgb(167, 184, 240);
+    width:  23.41px;
+    height:  22px;
+  }
+  .hinhanh:hover{
+    border-style: solid;
+    border-color: rgb(167, 184, 240);
+    border-width: 4px;
+  }
+  
+  .tab {
+    overflow: hidden;
+    border: 1px solid #000;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+  display: inline;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 0px;
+  transition: 0.3s;
+  font-size: 17px;
+  width: 32%;
+  margin: auto;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color:   rgb(167, 184, 240);
+    ;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: cyan;
+    width: 33%;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #000;
+    border-top: none;
+    background-color: rgb(255, 255, 255);
+  }
+  .top{
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-width: 3px;
+    width: 100%;
+    height: 105px;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    border-bottom: inherit;
+  }
+  
+  .anhtop{
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    width: 84.375px;
+    height: 100px;
+    float: left;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+  }
+  .tentop{
+    float: left;
+    padding: 0 0 0 10px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    
+  }
+  .tentop:hover{
+    color: rgb(167, 184, 240);
+    font-style: italic;
+  }
+  .rank{
+    float: left;
+    font-size: 50px;
+    margin: 0 auto 0 auto;
+    padding: 20px 0 0 0;
+    text-align: center;
+  }
+  .anhtop:hover{
+    border-color: rgb(167, 184, 240);
+    
+  }
+  
+  .toolbar {
+    
+    background-color: #58257b;
+  }
+  
+  .toolbar a {
+    float: left;
+    display: block;
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  
+  .toolbar a:hover {
+    background-color: #000;
+    color: white;
+  }
+
+  .toolbar a.block-active:hover {
+    color: #000;
+    background-color: #000 !important;
+    display: inline-block;
+    width: 65.78px;
+
+  }
+
+  .dropbtn {
+    background-color:  white;
+    color: black;
+    padding: 14px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    float: left;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 450px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    height: auto;
+    width: 150px;
+    float: left;
+  
+  }
+  
+  .dropdown-content a:hover {
+    
+    color: rgb(167, 184, 240);
+    font-style: italic;
+  
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #000;
+    color: white;
+  }
+  
+  .chitiet{
+    background-color: white;
+    /* height: 100%; */
+    width: 100%;
+    /* float: left; */
+  }
+  .noidungchitiet{
+    /* float: left; */
+    background-color: white;
+    height: auto;
+    /* width: 70%; */
+    border: 1px solid #000;
+  }
+  .tentruyen{
+    text-align: center;
+    font-size: 35px;
+  }
+  .anhtruyen{
+    height: 260px;
+    width: 220px;
+    /* float: left; */
+    margin: 0 0 0 20px;
+  } 
+  .gioithieu{
+    /* float: left; */
+    /* width: 600px; */
+    /* height: 260px; */
+    margin-left: 50px;
+  }
+  .gt{
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 0 100px 0 0px;
+    margin: 0 0 0 0;
+  }
+.item-gt{
+    display: block;
+}
+.mini-item-gt{
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-width: 100px;
+    width: 50%;
+    
+}
+  .theodoi{
+    float: left;
+    background-color: rgb(95, 150, 14);
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    padding: 15px 0 0 0 ;
+    margin: 0 20px 0 0;
+    text-align: center;
+    color:white;
+  }
+  .theodoi:hover{
+    font-style: italic;
+    background-color: rgb(128, 240, 174);
+  }
+  .doctudau{
+    float: left;
+    background-color: rgb(78, 47, 255);
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    padding: 15px 0 0 0 ;
+    margin: 0 20px 0 0;
+    text-align: center;
+    color: white;
+  }
+  .doctudau:hover{
+    font-style: italic;
+    background-color: rgb(105, 170, 255);
+  }
+  .docmoinhat{
+    float: left;
+    background-color: rgb(47, 206, 255);
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    padding: 15px 0 0 0 ;
+    margin: 0 0 0 0;
+    text-align: center;
+    color: white;
+  }
+  .docmoinhat:hover{
+    font-style: italic;
+    background-color: rgb(122, 215, 252);
+  }
+  .noidungtruyen{
+    /* float: left; */
+    /* width: 90%; */
+    /* height: 100%; */
+    
+    size: 100px;
+    padding-top: 30px;
+    font-size: 25px;
+    margin: 10px 20px 0 20px;
+    padding: 0;
+  }
+  .noidungthatsu{
+    font-size: 16px;
+    padding: 10px 0 15px 0;
+    text-align:justify;
+  }
+a.chapter{
+  color: blue;
+}
+a.chapter:hover{
+  color: #551A8B;
+}
+.danhsachchuong{
+  /* float: left; */
+    /* width: 90%; */
+    /* height: 100%; */
+    size: 100px;
+    padding-top: 30px;
+    font-size: 25px;
+    margin: 0 20px 0 20px;
+    padding: 0;
+}
+.danhsachchuongthatsu{
+  font-size: 16px;
+}
+a.buttonXemThem{
+  text-decoration: none;
+  color: blue;
+}
+a.buttonXemThem:hover{
+  text-decoration: underline;
+  color: #551A8B;
+}
+a.buttonXemThem span{
+  font-weight: 900;
+}
+.linkchuong :hover{
+}
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: #000;
+  margin-top: 10px;
+}
+.move-top {
+  position: fixed;
+  background: transparent;
+  bottom: 2rem;
+  right: 2rem;
+  color: blue;
+  border: 3px solid #1d1010;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.2rem 0.4rem;
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+.move-top.show {
+  visibility: visible;
+  opacity: 1;
+}
+@media screen and (max-width: 920px){
+  .header form input {
+width: 30rem;
+  }}
+@media screen and (max-width: 850px){
+  
+  .header form input {
+width: 25rem;
+}
+}
+@media screen and (max-width: 735px){
+  
+  .header form input {
+width: 20rem;
+}
+}
+@media screen and (max-width: 640px){
+  
+  .header form input {
+width: 15rem;
+}
+}
+@media screen and (max-width: 535px){
+  
+  .header form input {
+width: 13rem;
+}
+}
