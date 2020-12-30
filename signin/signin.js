@@ -56,14 +56,14 @@
             DomID('kiemTraLoiEmailDangNhap').innerHTML = "Email Không Hợp Lệ!"
             DomID('inputEmail').value = ''
             DomID('inputPassword').value = ''
-            return
+            return;
         }else{
             DomID('kiemTraLoiEmailDangNhap').innerHTML = ''
             if (passDangNhap !== accountCheck.password){
                 DomID('modal').setAttribute('style', 'opacity: 1; visibility: visible;')
                 DomID('kiemTraLoiPassDangNhap').innerHTML = "Password Không Hợp Lệ!"
                 DomID('inputPassword').value = ''
-                return
+                return;
             }
         }
     
@@ -77,7 +77,7 @@
         DomID('kiemTraLoiEmailDangNhap').innerHTML = ''
         DomID('kiemTraLoiPassDangNhap').innerHTML = ''
     
-        redirect = true
+        redirect = true;
     
     })
     
@@ -89,7 +89,7 @@
             modal[i].setAttribute('style', 'opacity: 0; visibility: hidden;')
     
             if (redirect){
-                window.location.href = "/index.html";
+                window.location.href = "../index.html";
             }
         }
     }

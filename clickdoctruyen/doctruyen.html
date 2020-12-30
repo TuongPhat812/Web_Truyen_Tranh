@@ -16,7 +16,9 @@
     </style>
 </head>
 
-<body>
+<body style="margin: 0.1px; padding: 0.1px;">
+    <div style="position: relative; z-index: 999; margin-bottom:102px; margin-top: 0px;">
+        <div style="position: fixed;width: 100%;">
     <header class="header">
         <div class="logo"><a href="../index.html"><img src="../img/logo.png" alt="logo"></a></div>
         <form>
@@ -46,7 +48,7 @@
 
             </div>
             <div class="toolbar">
-                <a href="../truyenhot.html" style="background-color: black;color: white;" href="#">HOT</a>
+                <a href="../truyenhot.html">HOT</a>
 
             </div>
 
@@ -75,13 +77,14 @@
             </div>
         </div>
     </div>
+    </div>
+    </div>
 
 
 
     <br><br><br>
     <div class="chitiet">
         <div id="tenTruyen" class="tentruyen">
-
         </div>
         <div class="thongtinbenle">
             Nếu không xem được nhấn F5
@@ -156,6 +159,8 @@
     </div>
     <script src="../dataset.js"></script>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.js"></script>
+    <script src="../thanhvien.js"></script>
     <script type="text/javascript" src="script.js"></script>
 </body>
 

@@ -64,29 +64,42 @@ $(document).ready(function () {
     var timer = function () {
         interval = setInterval(function () {
             $("#next").click();
-        }, 5000);
+        }, 8000);
     };
     timer();
     openCity(event, 'Top tháng');
-});
 
+});
+$('.tab').click(function(){
+    $('.defaultTab').removeClass("defaultTab");
+});
 function moveLeft(times) {
 
-    for (var i = 1; i <= times; i++)
+    if(times == 1)
+    {
+        $('img.slider').animate({left: '-=223px'}, 1200 / (times * 1.3));
+    }
+    else{
         $('img.slider').animate({
-            left: '-=210px'
-        }, 1200 / (times * 2));
+            left: `-=${times*223}px`
+        }, 1200 / (times * 0.3));
+    }
 
     clearInterval(interval);
-    //timer();
+    timer();
 }
 
 function moveRight(times) {
 
-    for (var i = 1; i <= times; i++)
+    if(times == 1)
+    {
+        $('img.slider').animate({left: '+=223px'}, 1200 / (times * 1.3));
+    }
+    else{
         $('img.slider').animate({
-            left: '+=210px'
-        }, 1200 / (times * 2));
+            left: `+=${times*223}px`
+        }, 1200 / (times * 0.3));
+    }
     clearInterval(interval);
     timer();
 }
@@ -235,7 +248,7 @@ function openCity(evt, cityName) {
     }
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
+        tablinks[i].className = tablinks[i].className.replace("active", "");
     }
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";

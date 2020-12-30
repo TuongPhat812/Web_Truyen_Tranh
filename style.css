@@ -23,6 +23,7 @@ body {
   align-items: center;
   padding: 0rem 2rem;
 }
+
 .logo {
   width: 15rem;
   height: 3.5rem;
@@ -171,7 +172,7 @@ body {
 
 img.slider {
     position: relative;
-    width: 190px;
+    width: 203px;
     height: 220px;
     margin: 0 10px;
     left: 0px;
@@ -182,7 +183,7 @@ img.slider {
     width: 100%;
     height: 320px;
     margin: 0 auto;
-    border-top: 1px solid #000;
+    /*border-top: 1px solid #000;*/
     position: relative;
     padding: 0px;
     left: 0px;
@@ -262,9 +263,10 @@ img.slider {
   background-color: #f1f1f1;
 }
 
+
 /* Style the buttons inside the tab */
 .tab button {
-  background-color: inherit;
+  /* background-color: inherit; */
   display: inline;
   border: none;
   outline: none;
@@ -287,6 +289,7 @@ img.slider {
   background-color: cyan;
   width:33%
 }
+
 
 /* Style the tab content */
 .tabcontent {
@@ -360,7 +363,7 @@ img.slider {
 }
 
 .dropbtn {
-  background-color: white;
+  background-color: #e4e4e4;
   color: black;
   padding: 14px 16px;
   font-size: 16px;
@@ -373,12 +376,13 @@ img.slider {
   position: relative;
   display: inline-block;
   float: left;
+  background-color: #e4e4e4;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #e4e4e4;
   min-width: 450px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -440,4 +444,7 @@ img.slider {
     .header form input {
   width: 13rem;
 }
+  }
+  .defaultTab{
+    background-color: cyan;
   }

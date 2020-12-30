@@ -4,7 +4,9 @@ $(document).ready(function () {
     //getDatas();
     openCity(event, 'Top tháng');
 });
-
+$('.tab').click(function(){
+    $('.defaultTab').removeClass("defaultTab");
+})
 function addPaginate() {
     var pageLength = dataset.length / 20;
     if (dataset.length % 20 !== 0)

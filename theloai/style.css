@@ -267,7 +267,6 @@ img.slider {
 
 /* Style the buttons inside the tab */
 .tab button {
-  background-color: inherit;
   display: inline;
   border: none;
   outline: none;
@@ -443,4 +442,7 @@ img.slider {
     .header form input {
   width: 13rem;
 }
+  }
+  .defaultTab{
+    background-color: cyan;
   }

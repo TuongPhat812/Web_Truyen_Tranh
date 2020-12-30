@@ -21,7 +21,9 @@ $(document).ready(function(){
     
 });
     
-
+$('.tab').click(function(){
+    $('.defaultTab').removeClass("defaultTab");
+});
 
 
 function openCity(evt, cityName) {
@@ -47,10 +49,10 @@ function getDatas() {
     var elm = dataset[strArr[1]];
 
     let htmtDatasClone = '';
-    htmtDatasClone += `${elm.tags[0]}`;
+    htmtDatasClone += `<a href="../theloai/TheLoai.html" style="text-decoration: none; color: blue; text-transform: uppercase;">${elm.tags[0]}</a>`;
 
     for(var elmClone = 1; elmClone < elm.tags.length; elmClone++)
-        htmtDatasClone += `  -  ${elm.tags[elmClone]}`;
+        htmtDatasClone += `  -  <a href="../theloai/TheLoai.html" style="text-decoration: none; color: blue; text-transform: uppercase;">${elm.tags[elmClone]}</a>`;
     
     htmtDatas += `
             <div>
@@ -72,7 +74,7 @@ function getDatas() {
                         </div>
                         <div class="item-gt">
                             <div class="mini-item-gt"><label>Thể loại</label></div>
-                            <div class="mini-item-gt"><a href="" style="text-decoration: none; color: blue; text-transform: uppercase;">${htmtDatasClone}</a></div>
+                            <div class="mini-item-gt">${htmtDatasClone}</div>
                         </div>
                         <div class="item-gt">
                             <div class="mini-item-gt"><label>Lượt xem</label></div>

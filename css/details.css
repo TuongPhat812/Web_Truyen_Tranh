@@ -1,15 +1,19 @@
+#buffHeader{
+    margin-bottom: 102px;
+  }
 .block-menu-right {
     grid-area: block-menu-right;
 }
 
 .block-menu-left {
     grid-area: block-menu-left;
+    background-color: #e4e4e4;
 }
 
 .block-menu {
     display: grid;
-    border-bottom: 1px solid #000;
-    grid-template-columns: 5fr 1fr;
+    /*border-bottom: 1px solid #000;*/
+    grid-template-columns: 5fr 0fr;
     grid-template-areas:
         "block-menu-left block-menu-right";
 }
@@ -103,6 +107,9 @@
     .dropdown {
         float: none;
     }
+    #buffHeader{
+        margin-bottom: 150px;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -118,6 +125,9 @@
 
     .header .login-center {
         width: 100%;
+    }
+    #buffHeader{
+        margin-bottom: 200px;
     }
 }
 
@@ -158,5 +168,8 @@
 
     .header .login-center {
         width: 100%;
+    }
+    #buffHeader{
+        margin-bottom: 250px;
     }
 }
