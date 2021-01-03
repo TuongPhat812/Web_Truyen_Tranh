@@ -1,0 +1,175 @@
+#buffHeader{
+    margin-bottom: 102px;
+  }
+.block-menu-right {
+    grid-area: block-menu-right;
+}
+
+.block-menu-left {
+    grid-area: block-menu-left;
+    background-color: #e4e4e4;
+}
+
+.block-menu {
+    display: grid;
+    /*border-bottom: 1px solid #000;*/
+    grid-template-columns: 5fr 0fr;
+    grid-template-areas:
+        "block-menu-left block-menu-right";
+}
+
+.danhsachchuongthatsu a {
+    color: blue;
+}
+
+.block-center {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    grid-template-areas:
+        "leftcolumn1 rightcolumn";
+}
+
+.block-center .leftcolumn1 {
+    grid-area: leftcolumn1;
+}
+
+.block-center .rightcolumn {
+    grid-area: rightcolumn;
+}
+
+.block-details {
+    display: flex;
+}
+
+.cacnutlenh {
+    display: inline-block;
+    margin-top: 55px;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top .rank {
+    flex-grow: 1;
+    width: 20%;
+}
+
+.top a:nth-of-type(1) {
+    display: inline-block;
+    flex-grow: 1;
+    width: 30%;
+}
+
+.top a:nth-of-type(2) {
+    display: inline-block;
+    flex-grow: 1;
+    width: 60%;
+}
+
+.top a:hover {
+    background-color: white;
+}
+
+@media screen and (max-width: 1275px) {
+
+    .block-center {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "rightcolumn"
+            "leftcolumn1";
+    }
+
+    .block-comment {
+        height: 150px !important;
+    }
+
+    .tabcontent {
+        height: 321px;
+    }
+
+    .rightcolumn {
+        padding-left: 0;
+        margin-bottom: 30px;
+      }
+}
+
+@media screen and (max-width: 1055px) {
+    .header {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .dropdown {
+        float: none;
+    }
+    #buffHeader{
+        margin-bottom: 150px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .header .logo {
+        text-align: center;
+    }
+
+    .header .login-center {
+        width: 100%;
+    }
+    #buffHeader{
+        margin-bottom: 200px;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    .block-details {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gioithieu {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 35px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .block-menu {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+@media screen and (max-width: 550px) {
+    .header form input {
+        width: 100%;
+    }
+
+    .header form {
+        width: 100%;
+    }
+
+    .header .logo {
+        text-align: center;
+    }
+
+    .header .login-center {
+        width: 100%;
+    }
+    #buffHeader{
+        margin-bottom: 250px;
+    }
+}

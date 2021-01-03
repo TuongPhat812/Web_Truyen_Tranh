@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/776bbe23d6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/details.css">
+    <link rel="stylesheet" href="../css/details.css">
+    <style>
+        .hover_login:hover {
+            /* text-decoration: underline; */
+            border-bottom: 2px solid #fff;
+            transition: all 1s;
+        }
+    </style>
+</head>
+
+<body style="margin: 0.1px; padding: 0.1px;">
+    <div style="position: relative; z-index: 999; margin-bottom:102px; margin-top: 0px;">
+        <div style="position: fixed;width: 100%;">
+    <header class="header">
+        <div class="logo"><a href="../index.html"><img src="../img/logo.png" alt="logo"></a></div>
+        <form>
+            <label for="input">
+                <input class="search" type="text" name="text" id="input" placeholder="Tìm kiếm truyện ..."
+                    onkeyup="search()" />
+                <span class="icon-search"><i class="fas fa-search"></i></span>
+            </label>
+        </form>
+        <div class="icon"><i class="fas fa-comment"></i></div>
+        <div class="login-center">
+            <a class="login-btn" style="color: #fff;" id="txtThanhVien"></a>
+            <a href="../signin/signin.html" id="txtLogout" style="color: #fff; text-decoration: none;"></a>
+            <div class="hover_login" style="display: flex; color: #fff;">
+                <a href="../signin/signin.html" id="hideLogin"
+                    style="color: #fff; text-transform: uppercase; text-decoration: none;">Đăng Nhập</a>
+                <span id="hide">&nbsp;/&nbsp;</span>
+                <a href="../signup/signup.html" id="hideDangKy"
+                    style="color: #fff; text-transform: uppercase; text-decoration: none;">Đăng Ký</a>
+            </div>
+        </div>
+    </header>
+    <div class="block-menu">
+        <div class="block-menu-left">
+            <div class="toolbar">
+                <a href="../index.html">HOME</a>
+
+            </div>
+            <div class="toolbar">
+                <a href="../truyenhot.html">HOT</a>
+
+            </div>
+
+
+            <div class="dropdown">
+                <a class="clickTheLoai" href="../theloai/TheLoai.html"><button class="dropbtn">THỂ LOẠI</button></a>
+                <div class="dropdown-content">
+                    <a class="clickTheLoai" id="chuyen-sinh" href="../theloai/TheLoai.html#chuyen-sinh">Chuyển sinh</a>
+                    <a class="clickTheLoai" id="drama" href="../theloai/TheLoai.html#drama">Drama</a>
+                    <a class="clickTheLoai" id="gia-tuong" href="../theloai/TheLoai.html#gia-tuong">Giả tưởng</a>
+                    <a class="clickTheLoai" id="hai-huoc" href="../theloai/TheLoai.html#hai-huoc">Hài hước</a>
+                    <a class="clickTheLoai" id="hanh-dong" href="../theloai/TheLoai.html#hanh-dong">Hành động</a>
+                    <a class="clickTheLoai" id="hoc-duong" href="../theloai/TheLoai.html#hoc-duong">Học đường</a>
+                    <a class="clickTheLoai" id="kinh-di" href="../theloai/TheLoai.html#kinh-di">Kinh dị</a>
+                    <a class="clickTheLoai" id="ngon-tinh" href="../theloai/TheLoai.html#ngon-tinh">Ngôn tình</a>
+                    <a class="clickTheLoai" id="phieu-luu" href="../theloai/TheLoai.html#phieu-luu">Phiêu lưu</a>
+                    <a class="clickTheLoai" id="shounen" href="../theloai/TheLoai.html#shounen">Shounen</a>
+                    <a class="clickTheLoai" id="thieu-nhi" href="../theloai/TheLoai.html#thieu-nhi">Thiếu nhi</a>
+                    <a class="clickTheLoai" id="truyen-mau" href="../theloai/TheLoai.html#truyen-mau">Truyện màu</a>
+                    <a class="clickTheLoai" id="xuyen-khong" href="../theloai/TheLoai.html#xuyen-khong">Xuyên không</a>
+                </div>
+            </div>
+            <div class="toolbar">
+                <a href="../lichsu/lichsu.html">LỊCH SỬ</a>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+
+    <br><br><br>
+    <div class="chitiet">
+        <div id="tenTruyen" class="tentruyen">
+        </div>
+        <div class="thongtinbenle">
+            Nếu không xem được nhấn F5
+        </div>
+        <div class="buttonchucnang">
+        </div>
+
+        <div class="noidungtruyen">
+            <div class="anhcuatruyen">
+                <img src="../imgnoidung/hinh13.jpg" style="height: 100%;width: 100%;" alt="">
+            </div>
+            <div class="anhcuatruyen">
+                <img src="../imgnoidung/hinh13.jpg" style="height: 100%;width: 100%;" alt="">
+            </div>
+            <div class="anhcuatruyen">
+                <img src="../imgnoidung/hinh13.jpg" style="height: 100%;width: 100%;" alt="">
+            </div>
+            <div class="anhcuatruyen">
+                <img src="../imgnoidung/hinh13.jpg" style="height: 100%;width: 100%;" alt="">
+            </div>
+            <div class="anhcuatruyen">
+                <img src="../imgnoidung/hinh13.jpg" style="height: 100%;width: 100%;" alt="">
+            </div>
+            <div class="anhcuatruyen">
+                <img src="../imgnoidung/hinh13.jpg" style="height: 100%;width: 100%;" alt="">
+            </div>
+            <div class="anhcuatruyen">
+                <img src="../imgnoidung/hinh13.jpg" style="height: 100%;width: 100%;" alt="">
+            </div>
+            <div class="anhcuatruyen">
+                <img src="../imgnoidung/hinh13.jpg" style="height: 100%;width: 100%;" alt="">
+            </div>
+            <div class="anhcuatruyen">
+                <img src="../imgnoidung/hinh13.jpg" style="height: 100%;width: 100%;" alt="">
+            </div>
+            <div class="anhcuatruyen">
+                <img src="../imgnoidung/hinh13.jpg" style="height: 100%;width: 100%;" alt="">
+            </div>
+            <div class="anhcuatruyen">
+                <img src="../imgnoidung/hinh13.jpg" style="height: 100%;width: 100%;" alt="">
+            </div>
+        </div>
+
+        <div class="buttonchucnang">
+        </div>
+    </div>
+    <div class="footer" style="height: 150px; border-radius: 5px;">
+        <a href="#">
+            <button class="move-top"><i class="fas fa-chevron-up"></i></button>
+        </a>
+        <div class="container" style="color: #FFF">
+            <div class="row">
+                <div class="col-md-6" style="display: none;"></div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>Thiết kế bởi
+                            <a href="https://uit.edu.vn/" style="color: #FF0040">SV UIT</a>
+                        </p>
+                        <p>Copyright
+                            <a href="Bỏ link vào ..." style="color: #FF0040">©2019-2020</a>
+                            <i>TruyenTranh.Com</i>
+                        </p>
+                        <p>Dữ liệu thu thập từ các nguồn công khai trên <a href="Bỏ link vào ..." rel="nofollow"
+                                style="color: #FF0040">Internet</a>. Nếu có nhu cầu <a href="Bỏ link vào ..." ;
+                                style="color: #FF0040">liên hệ</a> hoặc gỡ bỏ truyện hoặc khúc mắc gì có thể đọc thêm <a
+                                href="Bỏ link vào ..." style="color: #FF0040">về chúng tôi</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../dataset.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.js"></script>
+    <script src="../thanhvien.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
